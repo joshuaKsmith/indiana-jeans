@@ -2,12 +2,10 @@
 // 1. A component function that produces HTML for two radio buttons for 'Yes' and 'No'
 
 import { saveSurveySubmission } from "./TransientState.js"
-//import { render } from "./main.js"
 
 const handleSurveySubmissionClick = (clickEvent) => {
     if (clickEvent.target.id === "saveSubmission") {
         saveSurveySubmission()
-        //render() 
     }
 }
 export const saveSubmission = () => {
