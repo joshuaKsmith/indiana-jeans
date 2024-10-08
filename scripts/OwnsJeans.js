@@ -11,8 +11,9 @@ const handleOwnershipChange = (changeEvent) => {
 }
 export const OwnsJeansChoices = () => {
     document.addEventListener("change", handleOwnershipChange)
-    let radioButtonHTML = "<h2>Do you own a pair of blue jeans?</h2>"
-    radioButtonHTML += "<input type='radio' name='ownsJeans' value='true' /> Yes"
-    radioButtonHTML += "<input type='radio' name='ownsJeans' value='false' /> No"
-    return radioButtonHTML
+
+    return `
+        <input type='radio' name='ownsJeans' value='true' /> Yes
+        <input type='radio' name='ownsJeans' value='false' /> No
+    `
 }
